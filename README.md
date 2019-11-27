@@ -1,2 +1,2 @@
 # websvrapp
-Web server Go app built from Git using GIT Actions bro!
+Web server Go app built from Git using GIT Actions man!
