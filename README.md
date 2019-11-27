@@ -1,2 +1,2 @@
 # websvrapp
-Web server Go app from Git to Jenkins to Kubernetes
+Web server Go app built from Git using GIT Actions bro!
