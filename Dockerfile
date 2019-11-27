@@ -1,7 +1,7 @@
 FROM golang:alpine AS build-env
 WORKDIR /go/src
-COPY . /go/src/websvrapp
-RUN cd /go/src/websvrapp && go build .
+# COPY . /go/src/websvrapp
+# RUN cd /go/src/websvrapp && go build .
 
 
 FROM alpine
