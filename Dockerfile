@@ -1,12 +1,5 @@
+FROM alpine:3.10.2
 
-FROM golang:1.12.0-alpine3.9
+COPY seed /app/seed
 
-RUN mkdir /app
-
-ADD . /app
-
-WORKDIR /app
-
-RUN go build -o main .
-
-CMD ["/app/main"]
+ENTRYPOINT ["/app/seed"]
