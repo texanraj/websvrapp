@@ -31,6 +31,7 @@ dockers:
       - "docker.pkg.github.com/texanraj/websvrapp/websvrapp:{{ .Version }}"
     binaries:
       - seed
+    skip_push: false
     build_flag_templates:
       - "--label=org.label-schema.schema-version=1.0"
       - "--label=org.label-schema.version={{ .Version }}"
