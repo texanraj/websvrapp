@@ -32,3 +32,9 @@ jobs:
         uses: docker://docker.io/aquasec/trivy:0.2.1
         with:
           args: --cache-dir /var/lib/trivy docker.pkg.github.com/texanraj/websvrapp/websvrapp:${{ github.sha }}
+      - name: Perform release
+        uses: goreleaser/goreleaser-action@v1
+        with:
+          args: release --rm-dist
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_REGISTRY_TOKEN }}
